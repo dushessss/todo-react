@@ -4,9 +4,9 @@ type TaskListState = {
     tasks: string[]
 }
 
-class TaskList extends React.Component<object,TaskListState>{
+class TaskList extends React.Component<{},TaskListState>{
     inputId: React.RefObject<HTMLTextAreaElement>;
-    constructor(props: never) {
+    constructor(props: {}) {
         super(props);
         this.state = {
             tasks: []
